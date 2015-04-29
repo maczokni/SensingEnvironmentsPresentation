@@ -12,10 +12,10 @@ $(function(){
 	$('slides').swipe({
 		swipe:function(event, direction, distance, duration, fingerCount){
 			switch(direction){
-				case "left":
+				case 'left':
 					next();
 					break;
-				case "right":
+				case 'right':
 					back();
 					break;
 			}
