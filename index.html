@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UFT-8">
+<title>Pres</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="js/jquery.touchSwipe.min.js"></script>
+<script type="text/javascript" charset="utf-8">
+			$( document ).ready( function() {
+				var $body = $('section'); //Cache this for performance
+				
+				
+				var setBodyScale = function() {
+					var scaleFactor = 0.3,
+						scaleSource = ($body.height()*4 < $body.width()*3 ? $body.height()*1.33 : $body.width()),
+						maxScale = 600,
+						minScale = 30;
+
+					var fontSize = scaleSource * scaleFactor; //Multiply the width of the body by the scaling factor:
+
+					if (fontSize > maxScale) fontSize = maxScale;
+					if (fontSize < minScale) fontSize = minScale; //Enforce the minimum and maximums
+
+					$('section').css('font-size', fontSize + '%');
+					//$('body').css('font-size', fontSize + '%');
+				}
+			
+			    $(window).resize(function(){
+					setBodyScale();
+				});
+				
+				//Fire it when the page first loads:
+				setBodyScale();
+			});
+		</script>
+<script src="js/pres.js"></script>
+<link rel="stylesheet" type="text/css" href="css/normalise.css" />
+<link rel="stylesheet" type="text/css" href="css/styles.css"/>
+</head>
+
+<body>
+<div class ="slides">
+<section class ="titleSlide">
+<h1>Measuring perceptions of safety and fear of crime in everyday life</h1>
+<h2>Reka Solymosi</h2>
+<h2>r.solymosi.11@ucl.ac.uk</h2>
+<h2>@FOCApp</h2>
+</section>
+<section>
+	<h1>Who I am</h1>
+	<p> 
+	<br>PhD student studying fear of crime as an everyday experience people have as they go about their everyday activities.</p>
+	<ul><ul>
+		<li>Crowd-sourced data available online</li>
+		<li>Purpose-built mobile app for experience sampling</li>
+	</ul></ul>
+	<br><p>Founder & chair UCL Crime, Safety & Transport group.
+	</p>
+</section>
+<section>
+	<h1>Measuring fear of crime</h1>
+	<p> 
+	<br>Traditionally fear of crime is measured with cross-sectional surveys, reflecting general anxieties and attitudes, not experience. 
+	</p>
+</section>
+<section>
+	<h1>Fear experiences over time</h1>
+<div id='scrollTimes'>
+	<br>
+	<br>
+    <img src="images/scrollPlot.png" />
+</div>
+</section>
+<section>
+	<img src="images/allCamdenMap.png" align="middle"/>
+</section>
+<section>
+	<h1>Here are some bullet points</h1>
+	<ul>
+		<li>Item one</li>
+		<li>Item two</li>
+		<li>Item three</li>
+	</ul>
+</section>
+<section class = "endSlide">
+	<h1>Questions?</h1>
+</section>
+
+
+</div>
+</body>
+</hmtl>
