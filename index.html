@@ -11,15 +11,15 @@
 				
 				
 				var setBodyScale = function() {
-					var scaleFactor = 0.25,
-						scaleSource = ($body.height()*4 < $body.width()*3 ? $body.height()*1.33 : $body.width()),
+					var scaleFactor = 0.3,
+						scaleSource = ($body.height()*4 < $body.width()*3 ? $body.height() : $body.width()),
 						maxScale = 600,
-						minScale = 30;
+						minScale = 10;
 
 					var fontSize = scaleSource * scaleFactor; //Multiply the width of the body by the scaling factor:
 
 					if (fontSize > maxScale) fontSize = maxScale;
-					if (fontSize < minScale) fontSize = minScale; //Enforce the minimum and maximums
+					//if (fontSize < minScale) fontSize = minScale; //Enforce the minimum and maximums
 
 					$('section').css('font-size', fontSize + '%');
 					//$('body').css('font-size', fontSize + '%');
@@ -72,6 +72,9 @@
 <li>Not very worried
 <li>Not at all worried"
 </ul>
+<br>
+<br><br>
+<br><p class='smallP'> - British Crime Survey/ Crime Survey for England and Wales
 	</p>
 </section>
 <section>
@@ -108,16 +111,29 @@
 	<img src="images/allCamdenMap.png" align="middle"/>
 </section>
 <section>
-	<h1>Here are some bullet points</h1>
-	<ul>
-		<li>Item one</li>
-		<li>Item two</li>
-		<li>Item three</li>
-	</ul>
+	<h1>Fear experiences in time and place</h1>
+	<br>
+	<p> Put in space-time cluster graph here </p>
+</section>
+<section>
+	<h1>Personal variables and fear</h1>
+	<br>
+	<p> gender graph between BCS and foca results (+stats) </p>
+</section>
+<section>
+	<h1>Personal variables and fear</h1>
+	<br>
+	<p> gender graph between BCS and foca results (+stats) </p>
 </section>
 <section class = "endSlide">
 	<h1>Questions?</h1>
+	<br>
+	<br>
+	<br>
+	<p>For more info see:</p>
+		<p class='smallP'><br><br>Solymosi, R., Bowers, K. and Fujiyama, T. (2015), Mapping fear of crime as a context-dependent everyday experience that varies in space and time. Legal and Criminological Psychology. doi: 10.1111/lcrp.12076<br><br>Solymosi, R. (2014). Mapping fear of crime dynamically on everyday transport. JDiBrief Series. London: UCL Jill Dando Institute of Security and Crime Science. ISSN: 2050-4853. Available from www.jdibrief.com </p>
 </section>
+
 
 
 </div>

@@ -52,7 +52,13 @@ p{
 	text-align: justify;
 	padding-left: 35px;
 	padding-right: 35px;
+}
+p.smallP{
 
+	font-size: 1em;
+	text-align: justify;
+	padding-left: 35px;
+	padding-right: 35px;
 
 }
 
