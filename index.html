@@ -12,7 +12,7 @@
 				
 				var setBodyScale = function() {
 					var scaleFactor = 0.3,
-						scaleSource = ($body.height()*4 < $body.width()*3 ? $body.height() : $body.width()),
+						scaleSource = ($body.height()*4 < $body.width()*3 ? $body.height()*0.75 : $body.width()),
 						maxScale = 600,
 						minScale = 10;
 
